@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import Jobs from './components/Jobs';
 import About from './components/About';
+import Post from './components/Post';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/jobs' element={<Jobs />} />
         <Route exact path='/about' element={<About />} />
+        <Route path='/post/:postId' element={<Post />} />
         <Route path='/*' element={<About />} />
       </Routes>
     </div>
