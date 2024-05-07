@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function About() {
@@ -10,7 +11,7 @@ function About() {
         <title>About</title>
       </Helmet>
       <div>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function NoPage() {
@@ -10,7 +11,7 @@ function NoPage() {
         <title>404</title>
       </Helmet>
       <div>
-        <a href="/home">Home</a>
+        <Link to="/home">Home</Link>
       </div>
     </div>
   );

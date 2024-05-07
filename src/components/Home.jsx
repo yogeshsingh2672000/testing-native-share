@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function Home() {
@@ -10,10 +11,10 @@ function Home() {
         <title>Home</title>
       </Helmet>
       <div>
-        <a href="/jobs">Jobs</a>
+        <Link to="/jobs">Jobs</Link>
       </div>
       <div>
-        <a href="/about">About</a>
+        <Link to="/about">About</Link>
       </div>
     </div>
   );
